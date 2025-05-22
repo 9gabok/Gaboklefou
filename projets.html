@@ -5,31 +5,173 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Gaboklefou - Projets</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  <!-- CSS identique à ta version précédente, conservé tel quel -->
   <style>
-    /* ... (tout le CSS reste inchangé ici) ... */
+    body {
+      background-color: #8c8c8c;
+      background-image:
+        linear-gradient(#f6f6f6 1px, transparent 1px),
+        linear-gradient(to right, #f6f6f6 1px, #fff 1px);
+      background-size: 20px 20px;
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    a {
+      color: #FE4183;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: #d0356f;
+    }
+
+    header {
+      background: transparent;
+      padding: 1.5rem 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 0.3rem 0;
+      color: #FE4183;
+      font-weight: 700;
+      font-size: 2.5rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #FE4183;
+      font-weight: 600;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      color: #d0356f;
+    }
+
+    .grid-container {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: 1fr;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto 4rem;
+    }
+
+    .card {
+      padding: 1.5rem;
+      border-radius: 20px;
+      background: white;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      color: #333;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 10px 20px rgba(254, 65, 131, 0.3);
+    }
+
+    .purple { border-top: 6px solid #ab47bc; }
+
+    .emoji-dynamic {
+      display: inline-block;
+      animation: bounce 2s infinite;
+      margin-left: 6px;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .floating-socials {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 1000;
+    }
+
+    .social-btn {
+      color: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      box-shadow: 0 4px 8px rgba(254, 65, 131, 0.4);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .social-btn:hover {
+      transform: scale(1.1);
+    }
+
+    .social-btn.twitch {
+      background-color: #9146FF;
+    }
+
+    .social-btn.youtube {
+      background-color: #FF0000;
+    }
+
+    .social-btn.instagram {
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+
+    .social-btn.tiktok {
+      background: black;
+    }
+
+    .social-btn.discord {
+      background: #5865F2;
+    }
+
+    footer {
+      background: #f9f9f9;
+      color: #555;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      font-style: italic;
+      border-top: 1px solid #eee;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Gaboklefou<span class="emoji-dynamic">✨</span></h1>
+    <h1>Gaboklefou<span class="emoji-dynamic">💡</span></h1>
     <nav>
       <a href="index.html">Accueil</a> |
       <a href="blog.html">Blog</a> |
       <a href="stream.html">Stream</a> |
       <a href="projets.html">Projets</a>
     </nav>
-    <hr>
   </header>
 
   <main class="grid-container">
     <div class="card purple">
-      <h1>Mes Projets</h1>
-      <p>Voici quelques projets sur lesquels je travaille ou que j'ai terminés.</p>
+      <h2>💻 Mes Projets</h2>
+      <p>Voici une sélection de projets sur lesquels j’ai travaillé :</p>
       <ul>
-        <li><strong>Site Web Personnel :</strong> Développement d’un site vitrine avec HTML/CSS/JS.</li>
-        <li><strong>Bot Discord :</strong> Création d’un bot multi-fonctions pour gérer une communauté.</li>
-        <li><strong>Mini-jeu en ligne :</strong> Jeu de quiz en JavaScript avec scores enregistrés.</li>
+        <li><strong>🌐 Site Web Personnel :</strong> Mon site vitrine développé avec HTML, CSS et JavaScript.</li>
+        <li><strong>🤖 Bot Discord :</strong> Un bot multifonction pour la modération, la musique et les jeux.</li>
+        <li><strong>🎮 Mini-jeu de Quiz :</strong> Un jeu en ligne avec timer et score, codé en JavaScript.</li>
+        <li><strong>📱 Application Mobile (en cours) :</strong> Une app Android pour suivre mes lives et projets.</li>
+        <li><strong>🎨 Outils de design :</strong> Création de logos et visuels pour mes réseaux via Figma/Canva.</li>
+        <li><strong>🛠️ Site de portfolio dynamique :</strong> En React, avec hébergement sur GitHub Pages et contenu administrable.</li>
+        <li><strong>🔧 Scripts Python :</strong> Automatisation de tâches répétitives (renommage de fichiers, scrape, etc.).</li>
       </ul>
     </div>
   </main>
