@@ -6,7 +6,6 @@
   <title>Gaboklefou - Stream</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <style>
-    /* Styles identiques à ton code d'origine, sauf quelques ajustements (voir résumé ci-dessus) */
     body {
       background-color: #8c8c8c;
       background-image:
@@ -57,7 +56,7 @@
     .grid-container {
       display: grid;
       gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-columns: 1fr;
       padding: 2rem;
       max-width: 1000px;
       margin: 0 auto 4rem;
@@ -78,13 +77,7 @@
       box-shadow: 0 10px 20px rgba(254, 65, 131, 0.3);
     }
 
-    .pink { border-top: 6px solid #FE4183; }
-    .blue { border-top: 6px solid #4ebaff; }
-    .green { border-top: 6px solid #5becb1; }
     .purple { border-top: 6px solid #ab47bc; }
-    .cyan { border-top: 6px solid #00bcd4; }
-    .yellow { border-top: 6px solid #ffca28; }
-    .black { border-top: 6px solid #333; background: #f9f9f9; color: #333; }
 
     .emoji-dynamic {
       display: inline-block;
@@ -149,7 +142,7 @@
     }
 
     .social-btn.instagram {
-      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
       box-shadow: 0 4px 8px rgba(253, 89, 73, 0.5);
     }
 
@@ -207,7 +200,7 @@
 
       <h3>🎥 Stream en direct :</h3>
       <iframe
-        src="https://player.twitch.tv/?channel=gaboklefou&parent=tonsite.com"
+        src="https://player.twitch.tv/?channel=gaboklefou&parent=9gabok.github.io"
         height="480"
         width="100%"
         allowfullscreen
@@ -217,7 +210,7 @@
 
       <h3>💬 Chat :</h3>
       <iframe
-        src="https://www.twitch.tv/embed/gaboklefou/chat?parent=tonsite.com"
+        src="https://www.twitch.tv/embed/gaboklefou/chat?parent=9gabok.github.io"
         height="500"
         width="100%"
         frameborder="0"
@@ -228,11 +221,11 @@
   </main>
 
   <div class="floating-socials">
-    <a href="https://twitch.tv/gaboklefou" class="social-btn twitch" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitch"></i></a>
-    <a href="https://youtube.com" class="social-btn youtube" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
-    <a href="https://instagram.com" class="social-btn instagram" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
-    <a href="https://tiktok.com" class="social-btn tiktok" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
-    <a href="https://discord.gg" class="social-btn discord" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i></a>
+    <a href="https://twitch.tv/gaboklefou" class="social-btn twitch" target="_blank"><i class="fab fa-twitch"></i></a>
+    <a href="https://youtube.com" class="social-btn youtube" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://instagram.com" class="social-btn instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://tiktok.com" class="social-btn tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+    <a href="https://discord.gg" class="social-btn discord" target="_blank"><i class="fab fa-discord"></i></a>
   </div>
 
   <footer>
